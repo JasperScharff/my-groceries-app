@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+/* GLOBAL */
+body {
+  max-width: 100vmax;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* HEADER */
+.header-main-title {
+  padding: 80px;
+  margin: 5px;
+  background-color: rgb(53, 45, 45);
   color: white;
+  text-align: center;
+  font-size: 50px;
 }
 
-.App-link {
-  color: #61dafb;
+
+/* SPACE MAKER */
+.grocery-list,
+.shopping-cart {
+  margin: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* GROCERY LIST AREA */
+.grocery-list .list-item {
+  display: flex;
+  padding: 10px;
+}
+
+.grocery-list .list-item:nth-child(odd) {
+  background-color: #c77676;
+}
+
+.grocery-list .list-item:nth-child(even) {
+  background-color: #eba5a5;
+}
+
+.grocery-list .list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* SHOPPING CARD AREA */
+.shopping-cart .list-item {
+  display: flex;
+  padding: 10px;
+}
+
+.shopping-cart .list-item:nth-child(odd) {
+  background-color: rgba(127, 142, 190, 255);
+}
+
+.shopping-cart .list-item:nth-child(even) {
+  background-color: rgba(165, 181, 235, 255);
+}
+
+.shopping-cart .list-item {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-amount {
+  display: flex;
+  align-items: center;
+}
+
+/* GLOBAL LIST ITEM */
+.list-item {
+  cursor: pointer;
+  width: 40%;
+}
+.list-item:hover {
+  font-weight: bold;
+}
+
+/* INPUT FIELD AREA */
+input {
+  padding: 10px;
+  font-size: 13px;
+}
+input:focus {
+  background-color: rgba(235, 165, 165, 255 0.5);
+  background-color: rgba(235, 165, 255, 0.2);
+}
+
+/* BUTTON */
+button {
+  padding: 10px;
+  margin-left: 5px;
+}
+
+button {
+  border: 1px solid lightgray;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px #777;
+  margin-bottom: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: lightcoral;
+}
+
+button:focus {
+  outline: 0;
+}
+button:active {
+  background-color: rgb(128, 63, 63);
+  box-shadow: 0 0 0;
+  color: whitesmoke;
 }
